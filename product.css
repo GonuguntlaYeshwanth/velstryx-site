@@ -1,0 +1,118 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .product-detail {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  .product-images {
+    flex: 1;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #main-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  
+  .thumbnail-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .thumbnail-row img.thumbnail {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: 0.3s;
+  }
+  
+  .thumbnail-row img.thumbnail:hover {
+    border-color: #000;
+  }
+  
+  .product-info {
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .product-info h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .product-info p {
+    font-size: 18px;
+    margin: 8px 0;
+  }
+  
+  .add-to-cart {
+    margin-top: 15px;
+    padding: 12px 20px;
+    background-color: #000;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #333;
+  }
+  
+  /* Optional: Model Photos */
+  .model-photos {
+    margin-top: 30px;
+  }
+  
+  .model-photos h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  
+  .model-photos img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 10px;
+  }
+  
+  /* Responsive */
+  @media (min-width: 768px) {
+    .product-detail {
+      flex-direction: row;
+      gap: 40px;
+    }
+  
+    .product-images,
+    .product-info {
+      flex: 1;
+    }
+  
+    .product-images {
+      text-align: left;
+    }
+  }
