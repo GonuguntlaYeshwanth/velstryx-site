@@ -125,6 +125,20 @@
         formStatus.style.color = 'red';
       }
     });
+  gsap.from(".brand", {
+    opacity: 0,
+    y: 50,
+    duration: 1.5,
+    ease: "power4.out"
+  });
+
+  gsap.from(".tagline", {
+    opacity: 0,
+    y: 30,
+    delay: 0.3,
+    duration: 1.2,
+    ease: "power2.out"
+  });
   </script>
 
 </body>
